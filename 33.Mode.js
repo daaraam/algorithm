@@ -8,6 +8,7 @@
 [1, 1, 2, 2]	-1
 [1]	1 */
 
+let array = [1, 2, 3, 3, 4];
 function solution(array) {
 	let newArray = new Array(Math.max(...array) + 1).fill(0);
 	for (let i = 0; i < array.length; i++) {
@@ -19,3 +20,5 @@ function solution(array) {
 		return newArray.indexOf(Math.max(...newArray));
 	}
 }
+
+console.log(solution(array));
