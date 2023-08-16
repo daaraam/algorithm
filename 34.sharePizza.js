@@ -10,11 +10,12 @@
 - 판이 아니라 필요한 조각의 수를 구한 뒤에 6을 나눠야 한다. 
 - 필요한 조각 수에서 n명을 나눈 나머지가 0이 아니라면 최소한 1판(=6조각)이 더 필요하다. */
 
-let n = 10;
+let n = 4;
 function solution(n) {
 	let slices = 6;
 	while (slices % n !== 0) {
 		slices += 6;
+		// 6 + 6 + 6 + 6 + 6
 	}
 	return slices / 6;
 }
